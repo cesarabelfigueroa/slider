@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Lato;
+    src: url(./assets/fonts/Lato-Regular.woff);
+}
+
+* { padding: 0; margin: 0; }
+html, body{
+    min-height: 100% !important;
+    height: 100%;
+    font-family: Lato;
+}
+
+body{
+    background: #e5e5e5;
+}
+
+html, body {padding:0; margin:0; height:100%;}
+footer{position: fixed; bottom: 0; left: 0; right: 0;}
+.ui-container{
+	height: 100%;
+	width: 100%;
+	background: #e5e5e5;
+	padding: 0;
+	display: flex;
+}
+
+.header-info{
+    padding: 10%;
+}
+
+.background-header{
+	display: inline-block;
+    background: lightslategrey;
+    width: 100%;
+    height: 20%;
+    left: 0;
+}
+
+.background-footer{
+    background: lightslategrey;
+    width: 100%;
+    height: 100px;
+}
+
+
+.form-container{
+    display: inline-block;
+    background: transparent;
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    margin: auto;
+    top: 10%;
+    left: 0;
+    right: 0;
+}
+
+.image-container{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+}
+
+.image-body{
+    width: 70%;
+    background: darkslategray;
+    padding: 5%;
+    cursor: pointer;
+}
+
+.change-panel{
+    background: steelblue;
+    height: 100%;
+    width: 5%;
+}
+
+.panel-left{
+    width: 25%;
+    overflow: auto;
+}
+
+.image-preview {
+    width: 80%;
+    height: 100px;
+    background: darkslateblue;
+    flex-flow: column;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 2px;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.image:hover{
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    cursor: pointer;
+}
+
+.panel-right{
+    background: slategrey;
+}
+
+.body-main-image{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: center;
+}
